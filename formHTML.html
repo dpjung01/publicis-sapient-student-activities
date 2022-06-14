@@ -1,77 +1,78 @@
 <html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="form.css">
-    </head>
 
-    <div class="div1">
-        <h2>Activity Form</h2>
+<head>
+    <link rel="stylesheet" type="text/css" href="form.css">
+</head>
+
+<div class="div1">
+    <h2>Activity Form</h2>
+</div>
+
+<div class='columns'>
+    <div class='col'>
+        <form>
+            <br>
+            <label for="fname">Username:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Password:</label><br>
+            <input type="password" id="pwd" name="password"><br><br>
+        </form>
+        <form>
+            <label for="bday">DOB:</label><br>
+            <input type="text" id="bday" name="bday">
+        </form>
+
     </div>
 
-    <div class='columns'>
-        <div class='col'>
-            <form>
-                <br>
-                <label for="fname">Username:</label><br>
-                <input type="text" id="fname" name="fname"><br>
-                <label for="lname">Password:</label><br>
-                <input type="password" id="pwd" name="password"><br><br>
-              </form>
-              <form>
-                <label for="bday">DOB:</label><br>
-                <input type="text" id="bday" name="bday">
-            </form>
-              
-        </div>
+
+    <div class='col'>
+        <form>
+            <br>
+            <label for="skills">Skills?</label><br>
+            <input type="checkbox" id="skill1" name="java">
+            <label for="skill1">java</label><br>
+            <input type="checkbox" id="skill2" name="css">
+            <label for="skill2">css</label><br>
+            <input type="checkbox" id="skill3" name="html">
+            <label for="skill3">html</label>
+        </form><br><br>
+
+        <form>
+            <label for="schooling">Highest Qualification?</label><br><br>
+            <select name="schooling" id="schooling">
+                <option>high school</option>
+                <option>GRE</option>
+                <option>Bachelor's</option>
+                <option>Master's</option>
+                <option>PHD</option>
+            </select>
+            <br><br>
+        </form>
 
 
-        <div class='col'>
-            <form>
-                <br>
-                <label for="skills">Skills?</label><br>
-                <input type="checkbox" id="skill1" name="java">
-                <label for="skill1">java</label><br>
-                <input type="checkbox" id="skill2" name="css">
-                <label for="skill2">css</label><br>
-                <input type="checkbox" id="skill3" name="html">
-                <label for="skill3">html</label>
-              </form><br><br>
-
-              <form>
-                <label for="schooling">Highest Qualification?</label><br><br>
-                <select name="schooling" id="schooling">
-                  <option>high school</option>
-                  <option>GRE</option>
-                  <option>Bachelor's</option>
-                  <option>Master's</option>
-                  <option>PHD</option>
-                </select>
-                <br><br>
-              </form>
-
-
-        </div>
-        <div class="col">
-            <form>
-                <br><br>
-                <label for="gend">How do you identify?</label><br><br>
-                <input type="radio" id="male" name="gender" value="HTML">
-                <label for="male">male</label><br>
-                <input type="radio" id="female" name="gender" value="CSS">
-                <label for="female">female</label><br>
-                <input type="radio" id="nonbinary" name="fav_language" value="JavaScript">
-                <label for="nonbinary">nonbinary</label><br>
-                <input type="radio" id="none" name="fav_language" value="JavaScript">
-                <label for="none">choose not to disclose</label>
-              </form>
-        </div>
     </div>
+    <div class="col">
+        <form>
+            <br><br>
+            <label for="gend">How do you identify?</label><br><br>
+            <input type="radio" id="male" name="gender">
+            <label for="male">male</label><br>
+            <input type="radio" id="female" name="gender">
+            <label for="female">female</label><br>
+            <input type="radio" id="nonbinary" name="fav_language">
+            <label for="nonbinary">nonbinary</label><br>
+            <input type="radio" id="none" name="fav_language">
+            <label for="none">choose not to disclose</label>
+        </form>
+    </div>
+</div>
 
-    <div class="div1">
-        <br><br><br>
-        <input type="submit" value="Submit">
+<div class="div1">
+    <br><br><br>
+    <input type="submit" value="Submit">
     <input type="submit" value="Reset">
     <br><br><br>
-    </div>
-    
+</div>
+
 
 </html>

@@ -1,23 +1,24 @@
 .div1 {
     border: 5px outset rgb(49, 43, 43);
-    background-color: rgb(94, 152, 118);    
+    background-color: rgb(94, 152, 118);
     text-align: center;
-  }
+}
 
-  .columns {
+.columns {
     border: 1px solid black;
     margin: 1rem;
 
     text-align: center;
     display: flex;
     width: 97%;
-  }
-  .col {
+}
+
+.col {
     display: inline-block;
     padding: 1rem 1rem;
     vertical-align: middle;
     flex: 1;
     border: 5px solid rgba(147, 123, 43, 0.443);
     margin: 5px;
-    background-color: rgba(156, 205, 149, 0.947); 
-  }
+    background-color: rgba(156, 205, 149, 0.947);
+}
