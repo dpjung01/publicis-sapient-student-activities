@@ -1,0 +1,79 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>practice3</title>
+</head>
+
+<body>
+    <form name="login" onsubmit="return handleSubmit()">
+        First Name: <input type="text" name="fName" /> <br />
+        Last Name: <input type="text" name="lName" /> <br /><br><br>
+
+        Gender: <input type="radio" id="femaleGender" name="female" value="female">
+        <label for="femaleGender">Female</label>
+        <input type="radio" id="maleGender" name="male" value="male">
+        <label for="maleGender">Male</label>
+        <input type="radio" id="other" name="other" value="other">
+        <label for="other">other</label><br /><br><br>
+
+        Password: <input type="password" name="password" /><br />
+        Confirm Password: <input type="password" name="cpwd" /><br /><br><br>
+
+        Skills:
+        <label for="skills">Skills?</label><br>
+        <input type="checkbox" id="java" name="java">
+        <label for="java">java</label><br>
+        <input type="checkbox" id="css" name="css">
+        <label for="css">css</label><br>
+        <input type="checkbox" id="html" name="html">
+        <label for="html">html</label><br>
+        <input type="checkbox" id="python" name="python">
+        <label for="python">python</label><br><br><br>
+
+        <input type="submit" value="submit">
+    </form>
+
+    <script type="text/javascript">
+        function handleSubmit() {
+            let loginForm = document.login;
+            let firstName = loginForm.fName;
+            if (firstName.value.length < 3) {
+                alert('first name must be at least 3 characters');
+            }
+            let lastname = loginForm.lName;
+            if (lastname.value.length < 2) {
+                alert('last name must be at least 2 characters');
+            }
+
+            let fem=loginForm.female;
+            let male=loginForm.male;
+            let other=loginForm.other;
+            if(fem.checked!=true && male.checked!=true && other.checked!=true){
+                alert('please select one');
+            } 
+
+            let pwd=loginForm.password;
+            let cpwd=loginForm.cpwd;
+            if(pwd.value != cpwd.value)
+            {
+                alert('password and confirmed password must match');
+            }
+
+            let javach=loginForm.java;
+            let pych=loginForm.python;
+            let css=loginForm.css;
+            let js=loginFormljs;
+            if(!javach.checked && !pych.checked && !css.checked && !js.checked)
+            {
+                alert('please check one')
+            }
+            } 
+        }
+    </script>
+
+</body>
+
+</html>

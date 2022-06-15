@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>practice3</title>
+</head>
+
+<body>
+    <h1>Demo on JS 3</h1>
+    <h2>objects</h2>
+    <script type = "text/javascript">
+        let user1={name:"Nora", age:21};
+        document.write('<p>Name: '+user1.name+', Age: '+user1.age+'</p>');
+        function Person(name,age)
+        {
+            this.name=name;
+            this.age=age;
+        }
+        let user2=new Person('Liam', 21);
+        document.write('<p>Name: ' +user2.name+', Age: '+user2.age+'</p>');
+    </script>
+</body>
+
+</html>
